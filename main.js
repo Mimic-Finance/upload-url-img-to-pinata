@@ -1,6 +1,5 @@
 const axios = require("axios");
 const FormData = require("form-data");
-const fs = require("fs");
 const https = require("https");
 
 require("dotenv").config();
