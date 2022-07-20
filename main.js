@@ -6,7 +6,7 @@ require("dotenv").config();
 const image =
   "https://storage.googleapis.com/bacon-bucket-test/User1/finalimg/seriousbacon.jpeg";
 
-const getImgBin = async () => {
+const main = async () => {
   https.get(image, async (stream) => {
     var data = new FormData();
     data.append("file", stream);
@@ -34,4 +34,4 @@ const getImgBin = async () => {
   });
 };
 
-getImgBin();
+main();
